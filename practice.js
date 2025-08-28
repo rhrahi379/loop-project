@@ -23,28 +23,28 @@ function myFunction(rahi) {
             random = Math.floor(Math.random() * 30 + 1);
         break;
         default:
-            alert('Invalid type error, please choose (Easy, Medium, Hard)');
+            alert('Aare (Easy, Medium, Hard) egular moddhe jekono ekta lekho.');
     }
     while (attamps < maxAttamps) {
-        let game = parseInt(prompt(`Enter a number between 0 to ${range} and you have ${maxAttamps - attamps} attamps remaining.'`));
+        let game = parseInt(prompt(`Ekhon niche ekta sonkha chinta kore lekho jeta 0 theke ${range} er moddhe. ar tomar ${maxAttamps - attamps} bar chanch ase.'`));
         if (random === game) {
-            console.log(`Congratulations ${game} is correct number and you got it in ${attamps + 1} attamps`);
+            alert(`Congratulations ${game} ei number ti correct ar tumi eta ${attamps + 1} bar try kore pereso.`);
             break;
         }
         else if (game < random) {
-            alert('too low, try again');
+            alert('Ei number ta ektu soto sonkhar, arektu boro sonkha diye try koro.');
         }
         else {
-            alert('too high, please try again');
+            alert('Ei number ta ektu boro sonkhar, arektu soto sonkha diye try koro');
         }
         attamps++;
     }
     if (attamps === maxAttamps) {
-        console.log(`Sorry you out of maximum attamps, the number was ${random}`);
+        console.log(`Sorry! tomar ar kono chanch naii, number ta ${random} silo.`);
     }
 }
 
-let rahi = prompt('Choose a level  (Easy,  Medium,  Hard)').toUpperCase();
+let rahi = prompt('(Easy,  Medium,  Hard)  ei gular moddhe, jekono ekta niche lekho.').toUpperCase();
 myFunction(rahi);
 
 let name = 'rejaul';
