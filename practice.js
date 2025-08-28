@@ -46,6 +46,3 @@ function myFunction(rahi) {
 
 let rahi = prompt('(Easy,  Medium,  Hard)  ei gular moddhe, jekono ekta niche lekho.').toUpperCase();
 myFunction(rahi);
-
-let name = 'rejaul';
-console.log(name);l
